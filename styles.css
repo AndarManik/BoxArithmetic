@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+#square-container-left {
+  position: absolute;
+  right: calc(50% + 40px);
+}
+
+#square-container-right {
+  position: absolute;
+  left: calc(50% + 40px);
+}
+
+#output {
+  position: absolute;
+
+  top: calc(50% + 40px);
+}
+
+#buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+#numberInputForm{
+    display: flex;
+  flex-direction: column;
+}
+
+input {
+    height: 40px;
+    width: 72px;
+}
+
+.square {
+  break-inside: avoid; /* Prevents elements from being split across columns */
+  display: flex;
+  flex-wrap: wrap;
+  margin: 7.5px;
+  background-color: white;
+  cursor: pointer;
+  border: 3px solid black;
+  box-sizing: border-box;
+  position: relative; /* Positioning context for nested squares */
+  padding: 7.5px;
+  size: absolute;
+}
+
+.square.hover-effect {
+  background-color: grey;
+}
+.squareC.hover-effect {
+  background-color: grey;
+}
+
+button {
+  height: 40px;
+  width: 80px;
+}
+
+.square:empty {
+  height: 30px;
+  width: 30px;
+}
+
+.squareC {
+    flex-wrap: wrap;
+
+  break-inside: avoid; /* Prevents elements from being split across columns */
+  display: flex;
+  margin: 7.5px;
+  background-color: white;
+  cursor: pointer;
+  border: 3px solid black;
+  box-sizing: border-box;
+  position: relative; /* Positioning context for nested squares */
+  padding: 7.5px;
+}
+
+.squareC:empty {
+  height: 30px;
+  width: 30px;
+}

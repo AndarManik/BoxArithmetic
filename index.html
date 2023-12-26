@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black Square Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="square-container-left">
+      <div class="square"></div>
+    </div>
+    <div id="buttons">
+      <button id="setClick" onclick="setClickToDelete()">
+        Set click to delete
+      </button>
+      <button onclick="add()">plus</button>
+      <button onclick="times()">mult</button>
+      <button onclick="carat()">carat</button>
+      <form
+        id="numberInputForm"
+        onsubmit="event.preventDefault(); generic(getInputValue());"
+      >
+      <button type="submit">Higher-order</button>
+
+        <input type="number" id="numberInput" min="0" max="10" value="0" />
+      </form>
+    </div>
+    <div id="square-container-right">
+      <div class="square"></div>
+    </div>
+
+    <div id="output"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
