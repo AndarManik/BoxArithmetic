@@ -10,14 +10,12 @@ body {
   position: absolute;
   right: calc(50% + 40px);
   top: 50px;
-
 }
 
 #square-container-right {
   position: absolute;
   left: calc(50% + 40px);
   top: 50px;
-
 }
 
 #output {
@@ -27,21 +25,21 @@ body {
 }
 
 #buttons {
-    top: 50px;
-    position: absolute;
-    left: calc(50% - 40px);
+  top: 50px;
+  position: absolute;
+  left: calc(50% - 40px);
   display: flex;
   flex-direction: column;
 }
 
-#numberInputForm{
-    display: flex;
+#numberInputForm {
+  display: flex;
   flex-direction: column;
 }
 
 input {
-    height: 40px;
-    width: 72px;
+  height: 40px;
+  width: 72px;
 }
 
 .square {
@@ -76,7 +74,7 @@ button {
 }
 
 .squareC {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 
   break-inside: avoid; /* Prevents elements from being split across columns */
   display: flex;
